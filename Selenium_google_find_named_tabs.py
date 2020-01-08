@@ -10,12 +10,15 @@ driver = webdriver.Chrome()
 # open the the google web page
 driver.get ('http://google.com')
 element = driver.find_element_by_name('q'  )
-element.send_keys('Python Tutorials')
 
-# simulate someone pressing the RETURN or enter key
-from selenium.webdriver.common.keys import Keys
-element.send_keys(Keys.RETURN)
-time.sleep (5)
+element = driver.find_elements_by_id('logo')                # source code   <div id="logo">
+print ('found id=logo')
+element = driver.find_elements_by_class_name('search-icon') # <div class="search-icon"></div>'
+print ('found class=search-icon')
+element = driver.find_elements_by_link_text('chrome-search://local-ntp/voice.css')
+print ('found link text')
+# href="chrome-search://local-ntp/voice.css"></link>
+print ('Have the elements', element)
 print ('done')
 
 #for ii in ids:

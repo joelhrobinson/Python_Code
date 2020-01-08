@@ -1,7 +1,10 @@
 
 # string indexing
+hw = 'Hello World'
+print( hw[8])                   # print 'r'
 print( 'Hello World'[8])        # print 'r'
-print( 'tinker'[1:4])           # pring 'ink'
+
+print( 'tinker'[1:4])           # print 'ink'
 ##################################################
 # strings are immutable >> cannot be changed
 sname = "Samuel"

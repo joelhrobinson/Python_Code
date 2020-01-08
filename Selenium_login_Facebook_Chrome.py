@@ -9,12 +9,13 @@ driver = webdriver.Chrome()
 driver.get ('http://www.facebook.com')
 
 element = driver.find_element_by_id("email")
-print (element)
+print ("Opened facebook, now logging using Chrome")
 element.send_keys(username)
 element = driver.find_element_by_id("pass")
 element.send_keys(userpw)
 element.send_keys(Keys.RETURN)
-element.close
+print ("logged in")
+
 
 
 
@@ -23,10 +24,4 @@ element.close
 #       element.send_keys('test')
 #       from selenium.webdriver.common.keys import Keys
 #       element.send_keys(Keys.RETURN)
-
-
-
-
-
-
 # the end

@@ -8,9 +8,9 @@ try:
     f.close()
     print ("Found file=unicorn")
 
-except IOError:   
-    # print(os.error) will <class 'OSError'> 
+except IOError:       # print(os.error) will <class 'OSError'> 
     print('file unicorn does not exist: ', IOError ) 
+f = open("unicorn","w")  
     ############################################################################
 try:
     f = open("joel01.txt","r")    # "w" for write "r" for read
