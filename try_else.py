@@ -14,6 +14,6 @@ try:
 except TypeError:
     print("An exception was raised")
 else:
-    print("Thank God, no exceptions were raised.")
+    print("Thankfully no exceptions were raised.")
 
 #Thank God, no exceptions were raised.
