@@ -1,4 +1,4 @@
-import requests
+iimport requests
 
 url = 'https://jsonplaceholder.typicode.com/photos'
 response = requests.get(url)
@@ -11,3 +11,5 @@ for photo in json_data:
 
 print (len(url_list))
 print (len (set (url_list))) 
+print ("OK Boomer")
+
